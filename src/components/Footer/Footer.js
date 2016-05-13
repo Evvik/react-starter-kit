@@ -11,6 +11,7 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Footer.scss';
 import Link from '../Link';
+import Navigation from '../Navigation';
 
 function Footer() {
   return (
@@ -24,6 +25,8 @@ function Footer() {
         <span className={s.spacer}>·</span>
         <Link className={s.link} to="/not-found">Not Found</Link>
       </div>
+
+      <Navigation className={s.nav} />
     </div>
   );
 }
